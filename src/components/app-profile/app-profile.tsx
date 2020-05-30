@@ -11,7 +11,7 @@ export class AppProfile {
 
   normalize() {
     const name = this.match.params.name;
-    name ? name.substr(0, 1).toUpperCase() + name.substr(1).toLowerCase() : '';
+    return name ? name.substr(0, 1).toUpperCase() + name.substr(1).toLowerCase() : '';
   }
 
   render() {
